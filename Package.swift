@@ -13,11 +13,12 @@ let package = Package(
   products: [
     .library(
       name: "ComposableCoreLocation",
+      type: .dynamic,
       targets: ["ComposableCoreLocation"]
     )
   ],
   dependencies: [
-    .package(url: "https://github.com/globekeeper/swift-composable-architecture", .upToNextMajor(from: "0.39.0"))
+    .package(url: "https://github.com/globekeeper/swift-composable-architecture", .upToNextMajor(from: "0.36.0"))
   ],
   targets: [
     .target(
